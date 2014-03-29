@@ -11,11 +11,12 @@
 		D429A14F18E734E600F87E3E /* libv8_snapshot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D429A14C18E7346700F87E3E /* libv8_snapshot.a */; };
 		D429D5CF18E72EBF00F7C5CF /* jjtimer-core in Resources */ = {isa = PBXBuildFile; fileRef = D429D5CE18E72EBF00F7C5CF /* jjtimer-core */; };
 		D429F23718E72FD300F7C5CF /* v8 in Resources */ = {isa = PBXBuildFile; fileRef = D429F23618E72FD300F7C5CF /* v8 */; };
+		D4A252B318E74AB100AF6142 /* v8Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A252B118E74AB100AF6142 /* v8Runner.cpp */; };
 		D4E876C918E719F40086B30A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E876C818E719F40086B30A /* Cocoa.framework */; };
 		D4E876D318E719F50086B30A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4E876D118E719F50086B30A /* InfoPlist.strings */; };
 		D4E876D518E719F50086B30A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E876D418E719F50086B30A /* main.m */; };
 		D4E876D918E719F50086B30A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D4E876D718E719F50086B30A /* Credits.rtf */; };
-		D4E876DC18E719F50086B30A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E876DB18E719F50086B30A /* AppDelegate.m */; };
+		D4E876DC18E719F50086B30A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4E876DB18E719F50086B30A /* AppDelegate.mm */; };
 		D4E876DF18E719F50086B30A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E876DD18E719F50086B30A /* MainMenu.xib */; };
 		D4E876E118E719F50086B30A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E876E018E719F50086B30A /* Images.xcassets */; };
 		D4E876E818E719F50086B30A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E876E718E719F50086B30A /* XCTest.framework */; };
@@ -40,6 +41,8 @@
 		D429A14C18E7346700F87E3E /* libv8_snapshot.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_snapshot.a; path = jjtimerOSX/v8/out/x64.debug/libv8_snapshot.a; sourceTree = "<group>"; };
 		D429D5CE18E72EBF00F7C5CF /* jjtimer-core */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jjtimer-core"; sourceTree = "<group>"; };
 		D429F23618E72FD300F7C5CF /* v8 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = v8; sourceTree = "<group>"; };
+		D4A252B118E74AB100AF6142 /* v8Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = v8Runner.cpp; sourceTree = "<group>"; };
+		D4A252B218E74AB100AF6142 /* v8Runner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v8Runner.h; sourceTree = "<group>"; };
 		D4E876C518E719F40086B30A /* jjtimerOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jjtimerOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E876C818E719F40086B30A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D4E876CB18E719F40086B30A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -51,7 +54,7 @@
 		D4E876D618E719F50086B30A /* jjtimerOSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jjtimerOSX-Prefix.pch"; sourceTree = "<group>"; };
 		D4E876D818E719F50086B30A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		D4E876DA18E719F50086B30A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D4E876DB18E719F50086B30A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D4E876DB18E719F50086B30A /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		D4E876DE18E719F50086B30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D4E876E018E719F50086B30A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D4E876E618E719F50086B30A /* jjtimerOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jjtimerOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,10 +135,12 @@
 			children = (
 				D429F23618E72FD300F7C5CF /* v8 */,
 				D429D5CE18E72EBF00F7C5CF /* jjtimer-core */,
-				D4E876DA18E719F50086B30A /* AppDelegate.h */,
-				D4E8773C18E7211F0086B30A /* JSRunner.cpp */,
+				D4A252B118E74AB100AF6142 /* v8Runner.cpp */,
+				D4A252B218E74AB100AF6142 /* v8Runner.h */,
 				D4E8773D18E7211F0086B30A /* JSRunner.h */,
-				D4E876DB18E719F50086B30A /* AppDelegate.m */,
+				D4E8773C18E7211F0086B30A /* JSRunner.cpp */,
+				D4E876DA18E719F50086B30A /* AppDelegate.h */,
+				D4E876DB18E719F50086B30A /* AppDelegate.mm */,
 				D4E876DD18E719F50086B30A /* MainMenu.xib */,
 				D4E876E018E719F50086B30A /* Images.xcassets */,
 				D4E876CF18E719F40086B30A /* Supporting Files */,
@@ -290,7 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4E876DC18E719F50086B30A /* AppDelegate.m in Sources */,
+				D4E876DC18E719F50086B30A /* AppDelegate.mm in Sources */,
+				D4A252B318E74AB100AF6142 /* v8Runner.cpp in Sources */,
 				D4E876D518E719F50086B30A /* main.m in Sources */,
 				D4E8773E18E7211F0086B30A /* JSRunner.cpp in Sources */,
 			);
@@ -433,6 +439,7 @@
 					"$(PROJECT_DIR)/jjtimerOSX/v8/out/x64.debug",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = jjtimerOSX/v8/include;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -450,6 +457,7 @@
 					"$(PROJECT_DIR)/jjtimerOSX/v8/out/x64.debug",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = jjtimerOSX/v8/include;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

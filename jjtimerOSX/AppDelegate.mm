@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#include "v8Runner.h"
+
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
