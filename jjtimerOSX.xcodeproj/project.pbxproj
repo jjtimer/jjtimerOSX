@@ -18,6 +18,8 @@
 		D4E876E918E719F50086B30A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E876C818E719F40086B30A /* Cocoa.framework */; };
 		D4E876F118E719F50086B30A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4E876EF18E719F50086B30A /* InfoPlist.strings */; };
 		D4E876F318E719F50086B30A /* jjtimerOSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E876F218E719F50086B30A /* jjtimerOSXTests.m */; };
+		D4E8773E18E7211F0086B30A /* JSRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4E8773C18E7211F0086B30A /* JSRunner.cpp */; };
+		D4E8774018E723DC0086B30A /* jjtimer-core in Resources */ = {isa = PBXBuildFile; fileRef = D4E8773F18E723DC0086B30A /* jjtimer-core */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 		D4E876EE18E719F50086B30A /* jjtimerOSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "jjtimerOSXTests-Info.plist"; sourceTree = "<group>"; };
 		D4E876F018E719F50086B30A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4E876F218E719F50086B30A /* jjtimerOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jjtimerOSXTests.m; sourceTree = "<group>"; };
+		D4E8773C18E7211F0086B30A /* JSRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JSRunner.cpp; sourceTree = "<group>"; };
+		D4E8773D18E7211F0086B30A /* JSRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRunner.h; sourceTree = "<group>"; };
+		D4E8773F18E723DC0086B30A /* jjtimer-core */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jjtimer-core"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +120,10 @@
 		D4E876CE18E719F40086B30A /* jjtimerOSX */ = {
 			isa = PBXGroup;
 			children = (
+				D4E8773F18E723DC0086B30A /* jjtimer-core */,
 				D4E876DA18E719F50086B30A /* AppDelegate.h */,
+				D4E8773C18E7211F0086B30A /* JSRunner.cpp */,
+				D4E8773D18E7211F0086B30A /* JSRunner.h */,
 				D4E876DB18E719F50086B30A /* AppDelegate.m */,
 				D4E876DD18E719F50086B30A /* MainMenu.xib */,
 				D4E876E018E719F50086B30A /* Images.xcassets */,
@@ -232,6 +240,7 @@
 			files = (
 				D4E876D318E719F50086B30A /* InfoPlist.strings in Resources */,
 				D4E876E118E719F50086B30A /* Images.xcassets in Resources */,
+				D4E8774018E723DC0086B30A /* jjtimer-core in Resources */,
 				D4E876D918E719F50086B30A /* Credits.rtf in Resources */,
 				D4E876DF18E719F50086B30A /* MainMenu.xib in Resources */,
 			);
@@ -254,6 +263,7 @@
 			files = (
 				D4E876DC18E719F50086B30A /* AppDelegate.m in Sources */,
 				D4E876D518E719F50086B30A /* main.m in Sources */,
+				D4E8773E18E7211F0086B30A /* JSRunner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +476,7 @@
 				D4E876F818E719F50086B30A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4E876F918E719F50086B30A /* Build configuration list for PBXNativeTarget "jjtimerOSXTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +485,7 @@
 				D4E876FB18E719F50086B30A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
