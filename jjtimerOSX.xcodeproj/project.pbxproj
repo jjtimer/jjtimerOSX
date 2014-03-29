@@ -281,7 +281,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd jjtimerOSX/v8\nexport CXX=\"`which clang++` -std=c++11 -stdlib=libc++\"\nexport LINK=\"`which clang++` -std=c++11 -stdlib=libc++\"\nexport GYP_DEFINES=\"clang=1 mac_deployment_target=10.9\"\nmake dependencies\nmake x64.debug";
+			shellScript = "cd jjtimerOSX/v8\nexport CXX=\"`which clang++` -std=c++11 -stdlib=libc++\"\nexport LINK=\"`which clang++` -std=c++11 -stdlib=libc++\"\nexport GYP_DEFINES=\"clang=1 mac_deployment_target=10.9\"\nmake dependencies\nrm -rf tools/v8.xcodeproj\nrm -rf build/gyp/test/mac/xctest/test.xcodeproj\nmake x64.debug";
 		};
 /* End PBXShellScriptBuildPhase section */
 
