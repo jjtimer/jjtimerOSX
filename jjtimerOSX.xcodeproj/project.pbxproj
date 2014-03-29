@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4E876C918E719F40086B30A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E876C818E719F40086B30A /* Cocoa.framework */; };
+		D4E876D318E719F50086B30A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4E876D118E719F50086B30A /* InfoPlist.strings */; };
+		D4E876D518E719F50086B30A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E876D418E719F50086B30A /* main.m */; };
+		D4E876D918E719F50086B30A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D4E876D718E719F50086B30A /* Credits.rtf */; };
+		D4E876DC18E719F50086B30A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E876DB18E719F50086B30A /* AppDelegate.m */; };
+		D4E876DF18E719F50086B30A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E876DD18E719F50086B30A /* MainMenu.xib */; };
+		D4E876E118E719F50086B30A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E876E018E719F50086B30A /* Images.xcassets */; };
+		D4E876E818E719F50086B30A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E876E718E719F50086B30A /* XCTest.framework */; };
+		D4E876E918E719F50086B30A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E876C818E719F40086B30A /* Cocoa.framework */; };
+		D4E876F118E719F50086B30A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4E876EF18E719F50086B30A /* InfoPlist.strings */; };
+		D4E876F318E719F50086B30A /* jjtimerOSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E876F218E719F50086B30A /* jjtimerOSXTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4E876EA18E719F50086B30A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4E876BD18E719F40086B30A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4E876C418E719F40086B30A;
+			remoteInfo = jjtimerOSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4E876C518E719F40086B30A /* jjtimerOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jjtimerOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4E876C818E719F40086B30A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D4E876CB18E719F40086B30A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D4E876CC18E719F40086B30A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D4E876CD18E719F40086B30A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D4E876D018E719F40086B30A /* jjtimerOSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "jjtimerOSX-Info.plist"; sourceTree = "<group>"; };
+		D4E876D218E719F50086B30A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4E876D418E719F50086B30A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4E876D618E719F50086B30A /* jjtimerOSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jjtimerOSX-Prefix.pch"; sourceTree = "<group>"; };
+		D4E876D818E719F50086B30A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D4E876DA18E719F50086B30A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D4E876DB18E719F50086B30A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D4E876DE18E719F50086B30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D4E876E018E719F50086B30A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4E876E618E719F50086B30A /* jjtimerOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jjtimerOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4E876E718E719F50086B30A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D4E876EE18E719F50086B30A /* jjtimerOSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "jjtimerOSXTests-Info.plist"; sourceTree = "<group>"; };
+		D4E876F018E719F50086B30A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4E876F218E719F50086B30A /* jjtimerOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jjtimerOSXTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4E876C218E719F40086B30A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E876C918E719F40086B30A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E876E318E719F50086B30A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E876E918E719F50086B30A /* Cocoa.framework in Frameworks */,
+				D4E876E818E719F50086B30A /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4E876BC18E719F40086B30A = {
+			isa = PBXGroup;
+			children = (
+				D4E876CE18E719F40086B30A /* jjtimerOSX */,
+				D4E876EC18E719F50086B30A /* jjtimerOSXTests */,
+				D4E876C718E719F40086B30A /* Frameworks */,
+				D4E876C618E719F40086B30A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4E876C618E719F40086B30A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4E876C518E719F40086B30A /* jjtimerOSX.app */,
+				D4E876E618E719F50086B30A /* jjtimerOSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4E876C718E719F40086B30A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4E876C818E719F40086B30A /* Cocoa.framework */,
+				D4E876E718E719F50086B30A /* XCTest.framework */,
+				D4E876CA18E719F40086B30A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4E876CA18E719F40086B30A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4E876CB18E719F40086B30A /* AppKit.framework */,
+				D4E876CC18E719F40086B30A /* CoreData.framework */,
+				D4E876CD18E719F40086B30A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D4E876CE18E719F40086B30A /* jjtimerOSX */ = {
+			isa = PBXGroup;
+			children = (
+				D4E876DA18E719F50086B30A /* AppDelegate.h */,
+				D4E876DB18E719F50086B30A /* AppDelegate.m */,
+				D4E876DD18E719F50086B30A /* MainMenu.xib */,
+				D4E876E018E719F50086B30A /* Images.xcassets */,
+				D4E876CF18E719F40086B30A /* Supporting Files */,
+			);
+			path = jjtimerOSX;
+			sourceTree = "<group>";
+		};
+		D4E876CF18E719F40086B30A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4E876D018E719F40086B30A /* jjtimerOSX-Info.plist */,
+				D4E876D118E719F50086B30A /* InfoPlist.strings */,
+				D4E876D418E719F50086B30A /* main.m */,
+				D4E876D618E719F50086B30A /* jjtimerOSX-Prefix.pch */,
+				D4E876D718E719F50086B30A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4E876EC18E719F50086B30A /* jjtimerOSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4E876F218E719F50086B30A /* jjtimerOSXTests.m */,
+				D4E876ED18E719F50086B30A /* Supporting Files */,
+			);
+			path = jjtimerOSXTests;
+			sourceTree = "<group>";
+		};
+		D4E876ED18E719F50086B30A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4E876EE18E719F50086B30A /* jjtimerOSXTests-Info.plist */,
+				D4E876EF18E719F50086B30A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4E876C418E719F40086B30A /* jjtimerOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4E876F618E719F50086B30A /* Build configuration list for PBXNativeTarget "jjtimerOSX" */;
+			buildPhases = (
+				D4E876C118E719F40086B30A /* Sources */,
+				D4E876C218E719F40086B30A /* Frameworks */,
+				D4E876C318E719F40086B30A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jjtimerOSX;
+			productName = jjtimerOSX;
+			productReference = D4E876C518E719F40086B30A /* jjtimerOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4E876E518E719F50086B30A /* jjtimerOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4E876F918E719F50086B30A /* Build configuration list for PBXNativeTarget "jjtimerOSXTests" */;
+			buildPhases = (
+				D4E876E218E719F50086B30A /* Sources */,
+				D4E876E318E719F50086B30A /* Frameworks */,
+				D4E876E418E719F50086B30A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4E876EB18E719F50086B30A /* PBXTargetDependency */,
+			);
+			name = jjtimerOSXTests;
+			productName = jjtimerOSXTests;
+			productReference = D4E876E618E719F50086B30A /* jjtimerOSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4E876BD18E719F40086B30A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = jjtimer;
+				TargetAttributes = {
+					D4E876E518E719F50086B30A = {
+						TestTargetID = D4E876C418E719F40086B30A;
+					};
+				};
+			};
+			buildConfigurationList = D4E876C018E719F40086B30A /* Build configuration list for PBXProject "jjtimerOSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4E876BC18E719F40086B30A;
+			productRefGroup = D4E876C618E719F40086B30A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4E876C418E719F40086B30A /* jjtimerOSX */,
+				D4E876E518E719F50086B30A /* jjtimerOSXTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4E876C318E719F40086B30A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E876D318E719F50086B30A /* InfoPlist.strings in Resources */,
+				D4E876E118E719F50086B30A /* Images.xcassets in Resources */,
+				D4E876D918E719F50086B30A /* Credits.rtf in Resources */,
+				D4E876DF18E719F50086B30A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E876E418E719F50086B30A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E876F118E719F50086B30A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4E876C118E719F40086B30A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E876DC18E719F50086B30A /* AppDelegate.m in Sources */,
+				D4E876D518E719F50086B30A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E876E218E719F50086B30A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E876F318E719F50086B30A /* jjtimerOSXTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4E876EB18E719F50086B30A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4E876C418E719F40086B30A /* jjtimerOSX */;
+			targetProxy = D4E876EA18E719F50086B30A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4E876D118E719F50086B30A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4E876D218E719F50086B30A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D4E876D718E719F50086B30A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4E876D818E719F50086B30A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D4E876DD18E719F50086B30A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4E876DE18E719F50086B30A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		D4E876EF18E719F50086B30A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4E876F018E719F50086B30A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4E876F418E719F50086B30A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D4E876F518E719F50086B30A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D4E876F718E719F50086B30A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jjtimerOSX/jjtimerOSX-Prefix.pch";
+				INFOPLIST_FILE = "jjtimerOSX/jjtimerOSX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D4E876F818E719F50086B30A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jjtimerOSX/jjtimerOSX-Prefix.pch";
+				INFOPLIST_FILE = "jjtimerOSX/jjtimerOSX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D4E876FA18E719F50086B30A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/jjtimerOSX.app/Contents/MacOS/jjtimerOSX";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jjtimerOSX/jjtimerOSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "jjtimerOSXTests/jjtimerOSXTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D4E876FB18E719F50086B30A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/jjtimerOSX.app/Contents/MacOS/jjtimerOSX";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jjtimerOSX/jjtimerOSX-Prefix.pch";
+				INFOPLIST_FILE = "jjtimerOSXTests/jjtimerOSXTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4E876C018E719F40086B30A /* Build configuration list for PBXProject "jjtimerOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4E876F418E719F50086B30A /* Debug */,
+				D4E876F518E719F50086B30A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4E876F618E719F50086B30A /* Build configuration list for PBXNativeTarget "jjtimerOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4E876F718E719F50086B30A /* Debug */,
+				D4E876F818E719F50086B30A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4E876F918E719F50086B30A /* Build configuration list for PBXNativeTarget "jjtimerOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4E876FA18E719F50086B30A /* Debug */,
+				D4E876FB18E719F50086B30A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4E876BD18E719F40086B30A /* Project object */;
+}
