@@ -19,7 +19,6 @@
 		D4E876F118E719F50086B30A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4E876EF18E719F50086B30A /* InfoPlist.strings */; };
 		D4E876F318E719F50086B30A /* jjtimerOSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E876F218E719F50086B30A /* jjtimerOSXTests.m */; };
 		D4E8773E18E7211F0086B30A /* JSRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4E8773C18E7211F0086B30A /* JSRunner.cpp */; };
-		D4E8774018E723DC0086B30A /* jjtimer-core in Resources */ = {isa = PBXBuildFile; fileRef = D4E8773F18E723DC0086B30A /* jjtimer-core */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		D4E876F218E719F50086B30A /* jjtimerOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jjtimerOSXTests.m; sourceTree = "<group>"; };
 		D4E8773C18E7211F0086B30A /* JSRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JSRunner.cpp; sourceTree = "<group>"; };
 		D4E8773D18E7211F0086B30A /* JSRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRunner.h; sourceTree = "<group>"; };
-		D4E8773F18E723DC0086B30A /* jjtimer-core */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jjtimer-core"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +118,6 @@
 		D4E876CE18E719F40086B30A /* jjtimerOSX */ = {
 			isa = PBXGroup;
 			children = (
-				D4E8773F18E723DC0086B30A /* jjtimer-core */,
 				D4E876DA18E719F50086B30A /* AppDelegate.h */,
 				D4E8773C18E7211F0086B30A /* JSRunner.cpp */,
 				D4E8773D18E7211F0086B30A /* JSRunner.h */,
@@ -240,7 +237,6 @@
 			files = (
 				D4E876D318E719F50086B30A /* InfoPlist.strings in Resources */,
 				D4E876E118E719F50086B30A /* Images.xcassets in Resources */,
-				D4E8774018E723DC0086B30A /* jjtimer-core in Resources */,
 				D4E876D918E719F50086B30A /* Credits.rtf in Resources */,
 				D4E876DF18E719F50086B30A /* MainMenu.xib in Resources */,
 			);
