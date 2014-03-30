@@ -21,6 +21,7 @@ JSContext* context;
 }
 
 -(void) execute:(NSString *)str {
+  assert(str != nil && "'str' cannot be nil!");
   [context evaluateScript:str];
 }
 
