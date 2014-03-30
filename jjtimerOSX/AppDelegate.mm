@@ -22,7 +22,7 @@ NSString *loadFile(NSString *path) {
   return contents;
 }
 
-static NSString *initJS = @"";
+static NSString *initJS = @"App.set_title('jjtimerOSX...')";
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {

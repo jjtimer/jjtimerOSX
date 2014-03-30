@@ -37,7 +37,7 @@
 		D429D5CE18E72EBF00F7C5CF /* jjtimer-core */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jjtimer-core"; sourceTree = "<group>"; };
 		D4D4791E18E8A80F00D5473E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		D4D4792018E8A8B800D5473E /* JSRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = JSRunner.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
-		D4D4792118E8A8B800D5473E /* JSRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = JSRunner.m; sourceTree = "<group>"; tabWidth = 2; };
+		D4D4792118E8A8B800D5473E /* JSRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = JSRunner.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		D4E876C518E719F40086B30A /* jjtimerOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jjtimerOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E876C818E719F40086B30A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D4E876CB18E719F40086B30A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };

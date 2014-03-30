@@ -7,8 +7,50 @@
 //
 
 #import "JSRunner.h"
+#import "AppDelegate.h"
 
 #import <JavaScriptCore/JavaScriptCore.h>
+
+@protocol AppObjectExport <JSExport>
+-(void)set_title:(NSString*)str;
+// Util namespace
+-(NSNumber *) getMilli;
+JSExportAs(setInterval, -(void)setInterval:(JSValue *)fn timeInMs:(JSValue *)ms);
+-(void) clearInterval:(JSValue *)intervalID;
+@end
+
+@interface AppObject : NSObject <AppObjectExport>
+-(id) init:(AppDelegate *)app;
+
+@end
+
+@implementation AppObject
+// private
+{ AppDelegate *app; }
+
+-(id) init:(AppDelegate *)app_ {
+  self = [super init];
+  app = app_;
+  return self;
+}
+
+-(void)set_title:(NSString*) str {
+  [app.window setTitle:str];
+}
+
+-(NSNumber *) getMilli {
+  return @0;
+}
+
+-(void) setInterval:(JSValue *)fn timeInMs:(JSValue *)ms {
+
+}
+
+-(void) clearInterval:(JSValue *)intervalID {
+
+}
+
+@end
 
 @implementation JSRunner
 
@@ -17,6 +59,7 @@ JSContext* context;
 -(id) init:(AppDelegate *)app {
   self = [super init];
   context = [[JSContext alloc] init];
+  context[@"App"] = [[AppObject alloc] init:app];
   return self;
 }
 
