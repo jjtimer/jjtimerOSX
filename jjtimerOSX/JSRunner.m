@@ -66,6 +66,9 @@ JSContext* context;
   self = [super init];
   context = [[JSContext alloc] init];
   context[@"App"] = [[AppObject alloc] init:app];
+  [context setExceptionHandler:^(JSContext *c, JSValue *err) {
+    NSLog(@"%@", [err toString]);
+  }];
   return self;
 }
 
