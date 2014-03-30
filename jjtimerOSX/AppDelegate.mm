@@ -34,7 +34,7 @@ NSString *loadFile(NSString *path) {
 }
 
 - (IBAction)executeClick:(id)sender {
-  [JS execute:[NSString stringWithFormat:@"App.set_result_text(%@);", [self.jsInputText string]]];
+  [JS execute:[NSString stringWithFormat:@"App.setResultText(%@);", [self.jsInputText string]]];
 }
 
 - (IBAction)triggerClick:(id)sender {
