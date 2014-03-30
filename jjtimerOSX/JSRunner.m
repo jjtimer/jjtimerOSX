@@ -23,17 +23,20 @@ JSExportAs(setInterval, -(void)setInterval:(JSValue *)fn timeInMs:(JSValue *)ms)
 @end
 
 @interface AppObject : NSObject <AppObjectExport>
--(id) init:(AppDelegate *)app;
-
+-(id) init:(AppDelegate *)app runner:(JSRunner *)js;
 @end
 
 @implementation AppObject
 // private
-{ AppDelegate *app; }
+{ AppDelegate *app;
+  JSRunner *JS;
+  NSTimer *interfaceTimer;
+  JSValue *intervalFn; }
 
--(id) init:(AppDelegate *)app_ {
+-(id) init:(AppDelegate *)app_ runner:(JSRunner *)js {
   self = [super init];
   app = app_;
+  JS = js;
   return self;
 }
 
@@ -50,15 +53,26 @@ JSExportAs(setInterval, -(void)setInterval:(JSValue *)fn timeInMs:(JSValue *)ms)
 }
 
 -(NSNumber *) getMilli {
-  return @0;
+  NSDate *d = [NSDate date];
+  double x = [d timeIntervalSince1970];
+  return [NSNumber numberWithDouble:x];
 }
 
 -(void) setInterval:(JSValue *)fn timeInMs:(JSValue *)ms {
-
+  intervalFn = fn;
+  interfaceTimer = [NSTimer scheduledTimerWithTimeInterval:0.1
+                                                    target:self
+                                                  selector:@selector(timerFired:)
+                                                  userInfo:nil repeats:YES];
 }
 
 -(void) clearInterval:(JSValue *)intervalID {
+  [interfaceTimer invalidate];
+  interfaceTimer = nil;
+}
 
+-(void) timerFired:(NSTimer *)timer {
+  [intervalFn callWithArguments:nil];
 }
 
 @end
@@ -70,7 +84,7 @@ JSContext* context;
 -(id) init:(AppDelegate *)app {
   self = [super init];
   context = [[JSContext alloc] init];
-  context[@"App"] = [[AppObject alloc] init:app];
+  context[@"App"] = [[AppObject alloc] init:app runner:self];
   [context setExceptionHandler:^(JSContext *c, JSValue *err) {
     NSLog(@"%@", [err toString]);
   }];
