@@ -22,8 +22,6 @@ NSString *loadFile(NSString *path) {
   return contents;
 }
 
-static NSString *initJS = @"App.set_title('jjtimerOSX...');";
-
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
   [self.jsInputText setFont:[NSFont fontWithName:@"Menlo" size:12]];
@@ -32,11 +30,15 @@ static NSString *initJS = @"App.set_title('jjtimerOSX...');";
   [JS execute:loadFile(@"jjtimer-core/src/event")];
   [JS execute:loadFile(@"jjtimer-core/src/timer")];
   [JS execute:loadFile(@"jjtimer-core/src/session")];
-  [JS execute:initJS];
+  [JS execute:loadFile(@"app")];
 }
 
 - (IBAction)executeClick:(id)sender {
   [JS execute:[NSString stringWithFormat:@"App.set_result_text(%@);", [self.jsInputText string]]];
+}
+
+- (IBAction)triggerClick:(id)sender {
+  [JS execute:@"Timer.triggerDown(); Timer.triggerUp();"];
 }
 
 @end
