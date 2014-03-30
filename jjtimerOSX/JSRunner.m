@@ -15,6 +15,7 @@
 // Application namespace
 -(void) set_title:(NSString*)str;
 -(void) setResultText:(NSString*)str;
+-(void) setTimerText:(NSString*)str;
 // Util namespace
 -(NSNumber *) getMilli;
 JSExportAs(setInterval, -(void)setInterval:(JSValue *)fn timeInMs:(JSValue *)ms);
@@ -42,6 +43,10 @@ JSExportAs(setInterval, -(void)setInterval:(JSValue *)fn timeInMs:(JSValue *)ms)
 
 -(void) setResultText:(NSString *)str {
   app.resultText.stringValue = str;
+}
+
+-(void) setTimerText:(NSString *)str {
+  app.timerText.stringValue = str;
 }
 
 -(NSNumber *) getMilli {
