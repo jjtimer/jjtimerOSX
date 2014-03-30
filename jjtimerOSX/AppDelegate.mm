@@ -8,11 +8,15 @@
 
 #import "AppDelegate.h"
 
+#import "JSRunner.h"
+
 @implementation AppDelegate
+
+JSRunner *JS;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    JS = [[JSRunner alloc] init:self];
 }
 
 @end

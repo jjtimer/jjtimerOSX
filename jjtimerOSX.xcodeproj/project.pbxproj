@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D429D5CF18E72EBF00F7C5CF /* jjtimer-core in Resources */ = {isa = PBXBuildFile; fileRef = D429D5CE18E72EBF00F7C5CF /* jjtimer-core */; };
+		D4D4791F18E8A80F00D5473E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D4791E18E8A80F00D5473E /* JavaScriptCore.framework */; };
+		D4D4792218E8A8B800D5473E /* JSRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D4792118E8A8B800D5473E /* JSRunner.m */; };
 		D4E876C918E719F40086B30A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E876C818E719F40086B30A /* Cocoa.framework */; };
 		D4E876D318E719F50086B30A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4E876D118E719F50086B30A /* InfoPlist.strings */; };
 		D4E876D518E719F50086B30A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E876D418E719F50086B30A /* main.m */; };
@@ -19,7 +21,6 @@
 		D4E876E918E719F50086B30A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E876C818E719F40086B30A /* Cocoa.framework */; };
 		D4E876F118E719F50086B30A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4E876EF18E719F50086B30A /* InfoPlist.strings */; };
 		D4E876F318E719F50086B30A /* jjtimerOSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E876F218E719F50086B30A /* jjtimerOSXTests.m */; };
-		D4E8773E18E7211F0086B30A /* JSRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4E8773C18E7211F0086B30A /* JSRunner.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,9 @@
 
 /* Begin PBXFileReference section */
 		D429D5CE18E72EBF00F7C5CF /* jjtimer-core */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jjtimer-core"; sourceTree = "<group>"; };
+		D4D4791E18E8A80F00D5473E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		D4D4792018E8A8B800D5473E /* JSRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = JSRunner.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		D4D4792118E8A8B800D5473E /* JSRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = JSRunner.m; sourceTree = "<group>"; tabWidth = 2; };
 		D4E876C518E719F40086B30A /* jjtimerOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jjtimerOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E876C818E719F40086B30A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D4E876CB18E719F40086B30A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -53,8 +57,6 @@
 		D4E876EE18E719F50086B30A /* jjtimerOSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "jjtimerOSXTests-Info.plist"; sourceTree = "<group>"; };
 		D4E876F018E719F50086B30A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4E876F218E719F50086B30A /* jjtimerOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jjtimerOSXTests.m; sourceTree = "<group>"; };
-		D4E8773C18E7211F0086B30A /* JSRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JSRunner.cpp; sourceTree = "<group>"; };
-		D4E8773D18E7211F0086B30A /* JSRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRunner.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D4791F18E8A80F00D5473E /* JavaScriptCore.framework in Frameworks */,
 				D4E876C918E719F40086B30A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +103,7 @@
 		D4E876C718E719F40086B30A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D4D4791E18E8A80F00D5473E /* JavaScriptCore.framework */,
 				D4E876C818E719F40086B30A /* Cocoa.framework */,
 				D4E876E718E719F50086B30A /* XCTest.framework */,
 				D4E876CA18E719F40086B30A /* Other Frameworks */,
@@ -121,8 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				D429D5CE18E72EBF00F7C5CF /* jjtimer-core */,
-				D4E8773D18E7211F0086B30A /* JSRunner.h */,
-				D4E8773C18E7211F0086B30A /* JSRunner.cpp */,
+				D4D4792018E8A8B800D5473E /* JSRunner.h */,
+				D4D4792118E8A8B800D5473E /* JSRunner.m */,
 				D4E876DA18E719F50086B30A /* AppDelegate.h */,
 				D4E876DB18E719F50086B30A /* AppDelegate.mm */,
 				D4E876DD18E719F50086B30A /* MainMenu.xib */,
@@ -263,7 +267,7 @@
 			files = (
 				D4E876DC18E719F50086B30A /* AppDelegate.mm in Sources */,
 				D4E876D518E719F50086B30A /* main.m in Sources */,
-				D4E8773E18E7211F0086B30A /* JSRunner.cpp in Sources */,
+				D4D4792218E8A8B800D5473E /* JSRunner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

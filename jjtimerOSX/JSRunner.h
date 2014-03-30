@@ -2,15 +2,18 @@
 //  JSRunner.h
 //  jjtimerOSX
 //
-//  Created by Joey Gouly on 29/03/2014.
+//  Created by Joey Gouly on 30/03/2014.
 //  Copyright (c) 2014 jjtimer. All rights reserved.
 //
 
-#ifndef __jjtimerOSX__JSRunner__
-#define __jjtimerOSX__JSRunner__
+#import <Foundation/Foundation.h>
 
-class JSRunner {
+@class AppDelegate;
 
-};
+@interface JSRunner : NSObject
 
-#endif /* defined(__jjtimerOSX__JSRunner__) */
+-(id) init:(AppDelegate *)app;
+
+-(void) execute:(NSString *)str;
+
+@end
