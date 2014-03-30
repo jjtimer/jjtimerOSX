@@ -12,7 +12,9 @@
 #import <JavaScriptCore/JavaScriptCore.h>
 
 @protocol AppObjectExport <JSExport>
--(void)set_title:(NSString*)str;
+// Application namespace
+-(void) set_title:(NSString*)str;
+-(void) set_result_text:(NSString*)str;
 // Util namespace
 -(NSNumber *) getMilli;
 JSExportAs(setInterval, -(void)setInterval:(JSValue *)fn timeInMs:(JSValue *)ms);
@@ -34,8 +36,12 @@ JSExportAs(setInterval, -(void)setInterval:(JSValue *)fn timeInMs:(JSValue *)ms)
   return self;
 }
 
--(void)set_title:(NSString*) str {
+-(void) set_title:(NSString*) str {
   [app.window setTitle:str];
+}
+
+-(void) set_result_text:(NSString *)str {
+  app.resultText.stringValue = str;
 }
 
 -(NSNumber *) getMilli {
