@@ -7,11 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D429A14E18E734D800F87E3E /* libv8_base.x64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D429A14A18E7345500F87E3E /* libv8_base.x64.a */; };
-		D429A14F18E734E600F87E3E /* libv8_snapshot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D429A14C18E7346700F87E3E /* libv8_snapshot.a */; };
 		D429D5CF18E72EBF00F7C5CF /* jjtimer-core in Resources */ = {isa = PBXBuildFile; fileRef = D429D5CE18E72EBF00F7C5CF /* jjtimer-core */; };
-		D429F23718E72FD300F7C5CF /* v8 in Resources */ = {isa = PBXBuildFile; fileRef = D429F23618E72FD300F7C5CF /* v8 */; };
-		D4A252B318E74AB100AF6142 /* v8Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A252B118E74AB100AF6142 /* v8Runner.cpp */; };
 		D4E876C918E719F40086B30A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E876C818E719F40086B30A /* Cocoa.framework */; };
 		D4E876D318E719F50086B30A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4E876D118E719F50086B30A /* InfoPlist.strings */; };
 		D4E876D518E719F50086B30A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E876D418E719F50086B30A /* main.m */; };
@@ -37,12 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D429A14A18E7345500F87E3E /* libv8_base.x64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_base.x64.a; path = jjtimerOSX/v8/out/x64.debug/libv8_base.x64.a; sourceTree = "<group>"; };
-		D429A14C18E7346700F87E3E /* libv8_snapshot.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_snapshot.a; path = jjtimerOSX/v8/out/x64.debug/libv8_snapshot.a; sourceTree = "<group>"; };
 		D429D5CE18E72EBF00F7C5CF /* jjtimer-core */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jjtimer-core"; sourceTree = "<group>"; };
-		D429F23618E72FD300F7C5CF /* v8 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = v8; sourceTree = "<group>"; };
-		D4A252B118E74AB100AF6142 /* v8Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = v8Runner.cpp; sourceTree = "<group>"; };
-		D4A252B218E74AB100AF6142 /* v8Runner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v8Runner.h; sourceTree = "<group>"; };
 		D4E876C518E719F40086B30A /* jjtimerOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jjtimerOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E876C818E719F40086B30A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D4E876CB18E719F40086B30A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -71,8 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D429A14F18E734E600F87E3E /* libv8_snapshot.a in Frameworks */,
-				D429A14E18E734D800F87E3E /* libv8_base.x64.a in Frameworks */,
 				D4E876C918E719F40086B30A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,8 +100,6 @@
 		D4E876C718E719F40086B30A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D429A14C18E7346700F87E3E /* libv8_snapshot.a */,
-				D429A14A18E7345500F87E3E /* libv8_base.x64.a */,
 				D4E876C818E719F40086B30A /* Cocoa.framework */,
 				D4E876E718E719F50086B30A /* XCTest.framework */,
 				D4E876CA18E719F40086B30A /* Other Frameworks */,
@@ -133,10 +120,7 @@
 		D4E876CE18E719F40086B30A /* jjtimerOSX */ = {
 			isa = PBXGroup;
 			children = (
-				D429F23618E72FD300F7C5CF /* v8 */,
 				D429D5CE18E72EBF00F7C5CF /* jjtimer-core */,
-				D4A252B118E74AB100AF6142 /* v8Runner.cpp */,
-				D4A252B218E74AB100AF6142 /* v8Runner.h */,
 				D4E8773D18E7211F0086B30A /* JSRunner.h */,
 				D4E8773C18E7211F0086B30A /* JSRunner.cpp */,
 				D4E876DA18E719F50086B30A /* AppDelegate.h */,
@@ -185,7 +169,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4E876F618E719F50086B30A /* Build configuration list for PBXNativeTarget "jjtimerOSX" */;
 			buildPhases = (
-				D429F23818E72FF400F7C5CF /* ShellScript */,
 				D4E876C118E719F40086B30A /* Sources */,
 				D4E876C218E719F40086B30A /* Frameworks */,
 				D4E876C318E719F40086B30A /* Resources */,
@@ -255,7 +238,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D429F23718E72FD300F7C5CF /* v8 in Resources */,
 				D4E876D318E719F50086B30A /* InfoPlist.strings in Resources */,
 				D4E876E118E719F50086B30A /* Images.xcassets in Resources */,
 				D429D5CF18E72EBF00F7C5CF /* jjtimer-core in Resources */,
@@ -274,29 +256,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		D429F23818E72FF400F7C5CF /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cd jjtimerOSX/v8\nexport CXX=\"`which clang++` -std=c++11 -stdlib=libc++\"\nexport LINK=\"`which clang++` -std=c++11 -stdlib=libc++\"\nexport GYP_DEFINES=\"clang=1 mac_deployment_target=10.9\"\nmake dependencies\nrm -rf tools/v8.xcodeproj\nrm -rf build/gyp/test/mac/xctest/test.xcodeproj\nmake x64.debug";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		D4E876C118E719F40086B30A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D4E876DC18E719F50086B30A /* AppDelegate.mm in Sources */,
-				D4A252B318E74AB100AF6142 /* v8Runner.cpp in Sources */,
 				D4E876D518E719F50086B30A /* main.m in Sources */,
 				D4E8773E18E7211F0086B30A /* JSRunner.cpp in Sources */,
 			);
@@ -434,12 +399,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "jjtimerOSX/jjtimerOSX-Prefix.pch";
 				INFOPLIST_FILE = "jjtimerOSX/jjtimerOSX-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/jjtimerOSX/v8/out/x64.debug",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = jjtimerOSX/v8/include;
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -452,12 +414,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "jjtimerOSX/jjtimerOSX-Prefix.pch";
 				INFOPLIST_FILE = "jjtimerOSX/jjtimerOSX-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/jjtimerOSX/v8/out/x64.debug",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = jjtimerOSX/v8/include;
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

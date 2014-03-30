@@ -1,6 +1,3 @@
-[submodule "jjtimerOSX/v8"]
-	path = jjtimerOSX/v8
-	url = https://github.com/v8/v8.git
 [submodule "jjtimerOSX/jjtimer-core"]
 	path = jjtimerOSX/jjtimer-core
 	url = https://github.com/jjtimer/jjtimer-core.git
